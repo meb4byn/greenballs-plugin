@@ -78,12 +78,6 @@ public class GreenBallFilter implements Filter {
     if ((m = patternBlue.matcher(uri)).find()) {
       return "/plugin/greenballs/" + m.group(1) + "/green" + m.group(2) + "." + m.group(3);
     }
-    if ((m = patternRed.matcher(uri)).find()) {
-        return "/plugin/greenballs/" + m.group(1) + "/red" + m.group(2) + "." + m.group(3);
-    }
-    if ((m = patternYellow.matcher(uri)).find()) {
-        return "/plugin/greenballs/" + m.group(1) + "/yellow" + m.group(2) + "." + m.group(3);
-    }
     return null;
   }
 
